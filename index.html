@@ -6,17 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>0</button>
-    <button>.</button>
+    <div id="display"></div>
+    <button id="one">1</button>
+    <button id="two">2</button>
+    <button id="three">3</button>
+    <button id="four">4</button>
+    <button id="five">5</button>
+    <button id="six">6</button>
+    <button id="seven">7</button>
+    <button id="eight">8</button>
+    <button id="nine">9</button>
+    <button id="zero">0</button>
+    <button id="decimal">.</button>
     <button>+</button>
     <button>-</button>
     <button>*</button>
@@ -24,6 +25,53 @@
     <button>=</button>
     <button>AC</button>
     <script>
+        let displayValue = 0;
+        let screen = document.querySelector('#display');
+        screen.textContent = '0';
+        let one = document.querySelector('#one');
+        one.addEventListener('click', () => {
+            screen.textContent = '1';;
+        });
+        let two = document.querySelector('#two');
+        two.addEventListener('click', () => {
+            screen.textContent = '2';;
+        });
+        let three = document.querySelector('#three');
+        three.addEventListener('click', () => {
+            screen.textContent = '3';;
+        });
+        let four = document.querySelector('#four');
+        four.addEventListener('click', () => {
+            screen.textContent = '4';;
+        });
+        let five = document.querySelector('#five');
+        five.addEventListener('click', () => {
+            screen.textContent = '5';;
+        });
+        let six = document.querySelector('#six');
+        six.addEventListener('click', () => {
+            screen.textContent = '6';;
+        });
+        let seven = document.querySelector('#seven');
+        seven.addEventListener('click', () => {
+            screen.textContent = '7';;
+        });
+        let eight = document.querySelector('#eight');
+        eight.addEventListener('click', () => {
+            screen.textContent = '8';;
+        });
+        let nine = document.querySelector('#nine');
+        nine.addEventListener('click', () => {
+            screen.textContent = '9';;
+        });
+        let zero = document.querySelector('#zero');
+        zero.addEventListener('click', () => {
+            screen.textContent = '0';;
+        });
+        let decimal= document.querySelector('#decimal');
+        decimal.addEventListener('click', () => {
+            screen.textContent = '.';
+        });
         function add(num1, num2) {
             return num1 + num2;
         }
