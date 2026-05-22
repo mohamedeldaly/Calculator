@@ -107,8 +107,6 @@ function buttonLogic(e) {
       operator = e;
     }
   }
-  console.log(num1);
-  console.log(num2);
 }
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
