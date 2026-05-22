@@ -46,6 +46,22 @@ buttons.forEach((button) => {
     ) {
       num1 += e.target.textContent;
       div.textContent = num1;
+    } else if (e.target.textContent === "clear") {
+      num1 = "";
+      div.textContent = "0";
+    } else if (
+      e.target.textContent === "+" ||
+      e.target.textContent === "-" ||
+      e.target.textContent === "*" ||
+      e.target.textContent === "/"
+    ) {
+      operator = e.target.textContent;
+    } else if (e.target.textContent === "⌫" && num1.length > 1) {
+      num1 = num1.slice(0, -1);
+      div.textContent = num1;
+    } else if (e.target.textContent === "⌫" && num1.length === 1) {
+      num1 = "";
+      div.textContent = "0";
     }
   });
 });
