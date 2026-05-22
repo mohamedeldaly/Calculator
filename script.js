@@ -21,3 +21,11 @@ function operate(operator, num1, num2) {
     return divide(num1, num2);
   }
 }
+let num1 = "";
+let num2 = "";
+let operator = "";
+const buttons = document.querySelectorAll("button");
+const div = document.querySelector("div");
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {});
+});
